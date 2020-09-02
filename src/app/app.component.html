@@ -1,3 +1,14 @@
+<div class="row justify-content-end mb-2 mt-1 mr-5">
+  <div ngbDropdown class="d-inline-block">
+    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Set Theme</button>
+    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+      <button ngbDropdownItem (click)="handleDarkMode(true)">Dark Mode</button>
+      <button ngbDropdownItem (click)="handleDarkMode(false)">Light Mode</button>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <router-outlet></router-outlet>
 
+</div>
 
-<router-outlet></router-outlet>
